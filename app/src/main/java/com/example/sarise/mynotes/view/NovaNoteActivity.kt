@@ -56,7 +56,7 @@ class NovaNoteActivity: AppCompatActivity() {
 
         fabAddImagem.setOnCreateContextMenuListener { menu, v, menuInfo ->
             menu.add(Menu.NONE, 1, Menu.NONE, "Escolher foto")
-            menu.add(Menu.NONE, 2, Menu.NONE, "Tirar foto")
+//          menu.add(Menu.NONE, 2, Menu.NONE, "Tirar foto")
         }
 
         val intent:Intent = intent
@@ -79,7 +79,7 @@ class NovaNoteActivity: AppCompatActivity() {
         startActivityForResult(intent, REQUEST_IMAGE_GARELLY)
     }
 
-    private fun takePicture() {
+  private fun takePicture() {
         val values = ContentValues()
         values.put(MediaStore.Images.Media.TITLE, "nova imagem")
         values.put(MediaStore.Images.Media.DESCRIPTION, "imagem da camera")
@@ -129,12 +129,12 @@ class NovaNoteActivity: AppCompatActivity() {
                 requestPermissions(permission, REQUEST_IMAGE_CAPTURE)
             } else {
                 // permission granted
-                takePicture()
+               // takePicture()
             }
         }
         else{
             // system < M
-            takePicture()
+           // takePicture()
         }
     }
 

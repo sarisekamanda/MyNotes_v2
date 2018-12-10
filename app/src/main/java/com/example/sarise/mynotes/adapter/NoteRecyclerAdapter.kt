@@ -16,8 +16,7 @@ RecyclerView.Adapter<NoteRecyclerAdapter.ViewHolder>(){
 
     var onItemClick: ((Note) -> Unit)? = null
     private val inflater: LayoutInflater = LayoutInflater.from(context)
-    private var notes  = emptyList<Note>() // Cached copy of friends
-    //  private val mContext = context
+    private var notes  = emptyList<Note>()
 
     // infla o layout do item da lista para cada componente da lista
     override fun onCreateViewHolder(holder: ViewGroup, position: Int): ViewHolder {

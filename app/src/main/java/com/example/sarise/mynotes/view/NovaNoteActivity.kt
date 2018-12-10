@@ -34,7 +34,7 @@ class NovaNoteActivity: AppCompatActivity() {
 
 
     companion object {
-        // image pick code
+
         private val REQUEST_IMAGE_GARELLY = 1000
         private val REQUEST_IMAGE_CAPTURE = 2000
         const val EXTRA_REPLY = "view.REPLY"
@@ -46,7 +46,6 @@ class NovaNoteActivity: AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_nova_note)
 
-        // instanciando o objeto da notificação
         notificationManager =
                 getSystemService(Context.NOTIFICATION_SERVICE)
                         as NotificationManager
